@@ -1,0 +1,55 @@
+body::before{
+    display: block;
+    content: '';
+    height: 70px;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.nav-link{
+    color: aliceblue;
+    font-size: 125%;
+}
+.moon{
+    width: 10%;
+    border-radius: 50%;
+}
+.moon1,.moon2,.moon3,.moon4{
+    border-radius: 50%;
+    height: 115px;
+}
+.Mode{
+    background-color: aliceblue;
+    width: 11%;
+    animation:turn 5s ease-in infinite;
+}
+#servicos::before{
+    display: block;
+    content: '';
+height: 70px;
+}
+#comentarios::before{
+    display: block;
+    content: '';
+height: 70px;
+}
+@keyframes turn{
+    20%{transform: rotate(90deg);}
+    40%{transform: rotate(180deg);}
+    60%{transform: rotate(270deg);}
+    80%{transform: rotate(360deg);}
+    100%{transform: rotate(0deg);}
+}
+@media only screen and (max-width:575px){
+    .suni{
+padding-top: 5%;
+    }
+    .muni{
+padding-top: 0%;
+    }
+}
+@media only screen and (min-width:576px){
+    .form-control{
+width: 50%;
+    }
+}
